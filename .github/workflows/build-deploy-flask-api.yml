@@ -34,8 +34,7 @@ on:
   workflow_dispatch:
 
 env:
-  heroku_env: 'dev'
-  heroku_app: 'back-end'
+  APP_NAME: flask-backend
 
 jobs:
   Build:
