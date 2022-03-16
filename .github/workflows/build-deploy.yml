@@ -30,9 +30,8 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           appdir: "api-client" 
-          args: deploy --dir=build --prod
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: ${{ secrets.APP_NAME }}-${{ env.heroku_env}}
-          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          heroku_app_name: "${{ secrets.APP_NAME }}-${{ env.heroku_env}}"
+          heroku_email: "${{ secrets.HEROKU_EMAIL }}"
         env:
           heroku_env: 'dev'
