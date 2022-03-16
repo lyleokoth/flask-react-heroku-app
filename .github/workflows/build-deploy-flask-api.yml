@@ -95,7 +95,7 @@ jobs:
         title: Pytest coverage single falls below minimum ${{ env.COVERAGE_SINGLE }}
         token: ${{secrets.GITHUB_TOKEN}}
         assignees: ${{github.actor}}
-        labels: worflow-failed
+        labels: workflow-failed
         body: ${{ steps.pytester-cov.outputs.output-table }}
 
     - name: Coverage single fail - exit
@@ -110,7 +110,7 @@ jobs:
         title: Pytest coverage total falls below minimum ${{ env.COVERAGE_TOTAL }}
         token: ${{secrets.GITHUB_TOKEN}}
         assignees: ${{github.actor}}
-        labels: worflow-failed
+        labels: workflow-failed
         body: ${{ steps.pytester-cov.outputs.output-table }}
 
     - name: Coverage total fail - exit
