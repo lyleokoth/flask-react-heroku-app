@@ -83,8 +83,8 @@ jobs:
       id: pytester-cov
       uses: alexanderdamiani/pytester-cov@v1.2.3
       with:
-        pytest-root-dir: './api-server/'
-        cov-omit-list: 'tests/*, app.py, ./__init__.py'
+        pytest-root-dir: '.'
+        cov-omit-list: './api-server/tests/*, ./api-server/app.py, ./api-server/api/__init__.py'
         cov-threshold-single: ${{ env.COVERAGE_SINGLE }}
         cov-threshold-total: ${{ env.COVERAGE_TOTAL }}
 
