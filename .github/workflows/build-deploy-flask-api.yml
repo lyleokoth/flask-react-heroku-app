@@ -77,4 +77,4 @@ jobs:
 
     - name: Test with pytest
       run: |
-        if [ -d tests ] || [ -d test ]; then python -m pytest; fi
+        if [ -d ./api-server/tests ] || [ -d ./api-server/test ]; then python -m pytest; fi
