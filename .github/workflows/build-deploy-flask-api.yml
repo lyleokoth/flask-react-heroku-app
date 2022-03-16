@@ -83,7 +83,7 @@ jobs:
       id: pytester-cov
       uses: alexanderdamiani/pytester-cov@v1.2.3
       with:
-        pytest-root-dir: '.'
+        pytest-root-dir: './api-server'
         cov-omit-list: './api-server/tests/*, ./api-server/app.py, ./api-server/api/__init__.py'
         cov-threshold-single: ${{ env.COVERAGE_SINGLE }}
         cov-threshold-total: ${{ env.COVERAGE_TOTAL }}
@@ -140,3 +140,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "${{ env.APP_NAME }}-dev" #Must be unique in Heroku
           heroku_email: "${{ secrets.HEROKU_EMAIL }}"
+          appdir: "api-server" 
