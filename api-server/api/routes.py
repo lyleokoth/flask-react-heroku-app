@@ -12,3 +12,4 @@ def api_home():
 @app.route('/api/time', methods=['GET'])
 def get_time():
     return {'time': datetime.utcnow().strftime("%m/%d/%Y, %H:%M:%S")}
+    
