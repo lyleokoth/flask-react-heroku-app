@@ -31,7 +31,8 @@ jobs:
         with:
           appdir: "api-client" 
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: "${{ secrets.HEROKU_APP_NAME }}-${{ env.heroku_env}}"
+          heroku_app_name: "${{ secrets.HEROKU_APP_NAME }}-${{ env.heroku_app }}-${{ env.heroku_env}}"
           heroku_email: "${{ secrets.HEROKU_EMAIL }}"
         env:
           heroku_env: 'dev'
+          heroku_app: 'front-end'
