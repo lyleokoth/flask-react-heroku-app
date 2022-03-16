@@ -1,5 +1,6 @@
-from api import app
 from datetime import datetime
+
+from api import app
 
 
 @app.route('/api')
