@@ -34,4 +34,4 @@ jobs:
           heroku_app_name: "${{ env.APP_NAME }}"
           heroku_email: "${{ secrets.HEROKU_EMAIL }}"
         env:
-          APP_NAME: react-frontend
+          APP_NAME: react-frontend-flask-api
